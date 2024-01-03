@@ -1,0 +1,265 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*  CUSTOM STYLES */
+
+*{
+    box-sizing:border-box;
+}
+body{
+    font-size:16px;
+    line-height:1.5;
+}
+
+.container{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 30px;
+    width:100%;
+}
+.flex{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.flex-40{
+    flex:0 1 40%;
+}
+.flex-30{
+    flex:0 1 30%;
+}
+.flex-60{
+    flex:0 1 60%;
+}
+.justify-start{
+    display:flex;
+    justify-content: flex-start;
+}
+.align-start{
+    align-items:flex-start;
+}
+.font-0{
+    font-size:0;
+}
+
+.wrap{
+    flex-wrap:wrap;
+}
+/* HEADER */
+
+.header{
+    padding:30px 0;
+    position:absolute;
+    width:100%;
+    top:0;
+}
+.logo{
+    font-size:34px;
+    text-decoration:none;
+    font-weight:900;
+    margin-right:100px;
+    color:white;
+}
+.nav a {
+    font-size:18px;
+    text-decoration:none;
+    margin-left:20px;
+    color:white;
+}
+.btn{
+    background-color:rgb(231, 20, 20) ;
+    display:inline-block;
+    padding:5px 15px;
+    border-radius: 40px;
+}
+
+/* MAIN */
+
+/* SECTION */
+
+    /* HERO */
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(to right , rgba(19,120, 228, 0.836) ,rgba(126, 243, 102, 0.603)) , url(09.jpg) no-repeat 100% ;
+    background-size: cover;
+}
+.col-1{
+    flex:0 1 48%;
+}    
+.hero-heading{
+    font-size:40px;
+    font-weight:900;
+    color:white;
+    line-height:1;
+}
+.hero-btn {
+    text-decoration:none;
+    display:inline-block;
+    padding:5px 20px;
+    border:1px solid white;
+    border-radius:29px;
+    color:white;
+    font-size:20px;
+    margin-top:40px;
+}
+.hero-p {
+    display:inline-block;
+    margin-left:30px;
+    color:white;
+    font-size:20px;
+}
+
+    /* Section-About */
+
+.section-about{
+    padding:90px 0;
+    position:relative;
+}   
+.section-about h2{
+    font-size:28px;
+    font-weight:700;
+    margin-top:5px;
+}
+.section-about p {
+    font-size:18px;
+}
+.dot{
+    width:5px;
+    height:5px;
+    background-color:rgb(187, 181, 181);
+    margin-left:3px; 
+    display:inline-block;
+}
+.section-about p {
+    margin:10px 0;
+}
+
+   /* progress */
+.progress h3{
+    font-size:18px;
+    margin-bottom:0
+}
+.progress p {
+    font-size:20px
+}
+progress {
+    width:100%;
+    height:5px;
+    appearance: none;
+}
+progress::-webkit-progress-bar{
+    background-color: rgb(182, 182, 182);
+}
+progress::-webkit-progress-value{
+    background-color: rgb(54, 53, 53);
+}
+.about-img{
+    position:absolute;
+    width:40%;
+    right:20px;
+    bottom : 0;
+}
+
+/* Blog Section */
+
+.section-blog{
+    padding:70px 0;
+    background-color:rgb(228, 223, 223);
+}
+.blog-header{
+    text-align: center;
+}
+.section-blog h2{
+    font-size:28px;
+    font-weight:700;
+    margin:10px 0;
+}
+
+/*  Article Section */
+
+.article{
+    background-color:white;
+    margin:20px 0;
+}
+.article-content{
+    padding:20px;
+}
+.article h3{
+    font-size:28px;
+    font-weight: 300;
+    line-height: 1;
+    margin:10px 0;
+
+}
+.article p {
+    font-size:18px;
+    color:rgb(68, 67, 67);
+    margin:10px 0;
+}
+.article time{
+    color:rgb(145, 55, 3);
+    vertical-align:middle;
+    font-size:18px;
+    margin:10px 0;
+}
+.article img{
+    vertical-align: middle;
+}
+.article-content a{
+    display:inline-block;
+    padding:8px 18px ;
+    background-color:rgb(228, 223, 223);
+    border-radius:20px;
+    text-decoration: none;
+    margin:10px 0;
+    color:black;
+}
